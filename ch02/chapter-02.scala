@@ -67,5 +67,9 @@ object Chapter2 {
 
         val com = compose((x: Int) => x * 2, (y: Int) => y + 5)
         println(com(1))
+
+        val x = List(1, 2, 3, 4, 5) match {
+            case Cons(x, Cons(2, Cons(4, _))) => x
+        }
     }
 }
